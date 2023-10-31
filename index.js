@@ -9,7 +9,7 @@ function setup() {
 
   // load custom shader
   shader(test);
-  // dont draw vertices
+  // dont draw stroke around p5 primitives
   noStroke();
 }
 
