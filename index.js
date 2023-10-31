@@ -16,6 +16,8 @@ function setup() {
 function draw() {
   // wipe every frame
   clear();
+  // add timer
+  test.setUniform("millis", millis());
   // draw rect on canvas
   rect(0, 0, width, height);
 }
