@@ -5,7 +5,7 @@ function preload() {
 
 function setup() {
   // draws canvas on html body
-  createCanvas(600, 600, WEBGL);
+  createCanvas(800, 600, WEBGL);
 
   // load custom shader
   shader(test);

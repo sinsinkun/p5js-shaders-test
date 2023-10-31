@@ -5,5 +5,6 @@ uniform float millis;
 
 void main() {
   // set color per pixel
-  gl_FragColor = vec4(pos.x, pos.y, 0.5, 1.0);
+  float scale = 0.2 * abs(sin(millis/1200.0) + 1.0) + 0.7;
+  gl_FragColor = vec4(scale * pos.x, scale * pos.y, scale * 0.5, 1.0);
 }
